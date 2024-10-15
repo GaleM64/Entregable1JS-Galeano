@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(8, 8, 8);
+    text-align: center;
+    color: rgb(86, 168, 168);
+}
+input {
+    background-color: rgba(158, 158, 158, 0.445);
+    color: whitesmoke;
+    font-size: large;
+    border:0
+    ;outline:0;
+}
