@@ -5,7 +5,6 @@ function onKeyPressBlock(e,numero){
 
     let key = window.Event ? e.keyCode : e.which;
     let keychar = String.fromCharCode(key);
-    reg = /\d|\./;
     if (numero.indexOf(".")!=-1 && keychar=="."){
         return false;
     }else{
@@ -23,13 +22,22 @@ function calculaPorcentajes(numero){
 }
 setTimeout(() =>{
     if (confirm("¿Desea hacer otra operación?")) {
-        let respuesta = prompt("¿Qué operación quiere hacer?  ¿Suma o Resta?  (Tip: Abra la consola de desarrollador (F12) y ponga console.log(EjemploSuma) o (EjemploResta) para ver cuál le sería más útil)");
+        let respuesta = prompt("¿Qué operación quiere hacer?  ¿Suma o Resta?  (Tip: Abra la consola de desarrollador (F12) y ponga Sumas o Restas para ver ejemplos de cuál le sería más útil)");
         if (respuesta === "Suma") {
-            alert("owo")
+            const numero1 = prompt("Ingrese el primer valor");
+            const numero2 = prompt("ingrese el segundo valor");
+            alert(+numero1 + +numero2)
+        } else if (respuesta === "Resta") {
+            const numero1 = prompt("Ingrese el primer valor");
+            const numero2 = prompt("ingrese el segundo valor");
+            alert(+numero1 - +numero2)
         } else {
-            alert("uwu")
+            alert("Tenga un buen día, gracias por usar nuestra página.  ¿Sabía que los porcentajes son reversibles? El 8 % de 50 suena muy difícil de hacer mentalmente, pero el 50% de 8 es más fácil")
         }
     } else {
         alert("Tenga un buen día, gracias por usar nuestra página.  ¿Sabía que los porcentajes son reversibles? El 8 % de 50 suena muy difícil de hacer mentalmente, pero el 50% de 8 es más fácil");
     }
 }, 15000)
+
+const Sumas = ["Impuestos en dolares", "compras digitales", "subscripciones digitales" ];
+const Restas = ["Descuentos", "ofertas", "promociones"]
