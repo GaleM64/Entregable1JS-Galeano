@@ -1,6 +1,10 @@
 alert ("Este proyecto es provisorio o un placeholder")
 alert ("El proyecto final puede ser distinto a lo que se vea en esta entrega (o quizas no)")
 
+let numero = prompt("De que numero quiere calcular el porcentaje?")
+let porcentaje = prompt("Que procentaje?")
+alert(+numero * +porcentaje /+100)
+/*
 function onKeyPressBlock(e,numero){
 
     let key = window.Event ? e.keyCode : e.which;
@@ -20,6 +24,7 @@ function calculaPorcentajes(numero){
     document.getElementById("porcent10").value=Math.floor(numero*10)/100;
 
 }
+*/
 setTimeout(() =>{
     if (confirm("¿Desea hacer otra operación?")) {
         let respuesta = prompt("¿Qué operación quiere hacer?  ¿Suma o Resta?  (Tip: Abra la consola de desarrollador (F12) y ponga Sumas o Restas para ver ejemplos de cuál le sería más útil)");
@@ -37,7 +42,7 @@ setTimeout(() =>{
     } else {
         alert("Tenga un buen día, gracias por usar nuestra página.  ¿Sabía que los porcentajes son reversibles? El 8 % de 50 suena muy difícil de hacer mentalmente, pero el 50% de 8 es más fácil");
     }
-}, 15000)
+}, 10000)
 
 const Sumas = ["Impuestos en dolares", "compras digitales", "subscripciones digitales" ];
 const Restas = ["Descuentos", "ofertas", "promociones"]
